@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #dcdcdc; /* Gray background */
+  color: #333;
+}
+
+.App {
+  padding: 0; /* Adjusted for full-height nav */
+}
+
+/* Global Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333; /* Changed to white for contrast */
+  margin: 0; /* Removed margin */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #1ada4a;
+  padding: 20px;
+  position: relative; /* Keep position relative for other styles */
+  border-radius: 0; /* Make corners sharp */
+  display: flex; /* Use flexbox for positioning */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically */
+}
+
+/* Container for heading and nav items */
+.nav-container {
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between heading and links */
+  align-items: center; /* Align items vertically */
+}
+
+/* Navigation List */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Align left */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 15px; /* Keep padding constant */
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #158f33; /* Darker shade on hover */
+}
+
+/* Section Heading Styles */
+.section-heading {
+  font-size: 2rem;
+  color: #1ada4a;
+  margin-bottom: 30px;
+}
+
+/* HomePage Styles */
+.HomePage {
+  margin: 40px 0;
+}
+
+.HomePage h1 {
+  font-size: 2.8rem;
+  color: #1ada4a;
+}
+
+.HomePage p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* AboutPage Styles */
+.AboutPage,
+.SkillsPage,
+.ContactPage {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto; /* Add margin to all pages */
+  text-align: left;
+}
+
+.AboutPage h1,
+.SkillsPage h1,
+.ContactPage h1 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.AboutPage p,
+.SkillsPage ul li,
+.ContactPage p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ContactPage Styles */
+.ContactPage form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactPage form div {
+  margin-bottom: 15px;
+}
+
+.ContactPage form label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.ContactPage form input,
+.ContactPage form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.SubmitButton {
+  background-color: #28a745; /* Bootstrap's success color */
+  border-color: #28a745;
+}
+
+.SubmitButton:hover {
+  background-color: #218838; /* Darker green for hover effect */
+  border-color: #1e7e34;
+}
+
+.SubmitButton:active {
+  background-color: #1ada4a; /* Change to your desired color when clicked */
+  border-color: #1ada4a; /* Optional: change border color */
+}
+
+/* SubmissionSuccess Styles */
+.SubmissionSuccess {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.SubmissionSuccess h1 {
+  color: #28a745;
+  font-size: 2rem;
+}
+
+.SubmissionSuccess p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+}
+
+footer a {
+  color: #1ada4a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .HomePage h1 {
+    font-size: 2rem;
+  }
+
+  .ContactPage form input,
+  .ContactPage form textarea {
+    font-size: 0.9rem;
+  }
+
+  .ContactPage form button {
+    font-size: 0.9rem;
+  }
+}
