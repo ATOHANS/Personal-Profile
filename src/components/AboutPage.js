@@ -13,7 +13,7 @@ return(
     </h2>
     <br></br>
     <p>
-    Currently studying Bachelor of Science in Computer Science. My dream is yet to be decided.
+    Currently studying Bachelor of Science in Computer Science.
     </p>
     <h2>
         Education
